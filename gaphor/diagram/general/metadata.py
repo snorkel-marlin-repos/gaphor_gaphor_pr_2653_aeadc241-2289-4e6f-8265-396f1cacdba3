@@ -50,7 +50,7 @@ class MetadataItem(ElementPresentation):
             "vertical-align": VerticalAlign.TOP,
         }
         heading_style: Style = {
-            **text_style,
+            **text_style,  # type: ignore[misc]
             "font-size": "small",
             "font-weight": FontWeight.BOLD,
         }
